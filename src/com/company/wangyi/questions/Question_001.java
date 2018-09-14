@@ -36,9 +36,6 @@ public class Question_001 {
 			int a = in.nextInt();
 			arr[i] = a;
 		}
-		int kk = in.nextInt();
-		int dd = in.nextInt();		
-		
 		
 	}
 
