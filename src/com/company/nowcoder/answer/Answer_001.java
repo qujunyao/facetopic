@@ -20,6 +20,7 @@ public class Answer_001 {
 	            }
 	        }
 	        System.out.print(getAns(x, y, array, lastRow));
+	        in.close();
 	    }
 	    public static int getAns(int x, int y, char[][] array, int lastRow) {
 	        int curY = 0;

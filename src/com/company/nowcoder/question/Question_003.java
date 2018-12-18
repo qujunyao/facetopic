@@ -47,5 +47,6 @@ public class Question_003 {
 			Long[] n = list.get(i);
 			System.out.println("Case #" + (i + 1) + ": " + (n[0] + n[1] > n[2]));
 		}
+		scanner.close();
 	}
 }

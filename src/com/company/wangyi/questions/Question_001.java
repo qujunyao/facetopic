@@ -36,7 +36,7 @@ public class Question_001 {
 			int a = in.nextInt();
 			arr[i] = a;
 		}
-		
+		in.close();
 	}
 
 }

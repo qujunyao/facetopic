@@ -117,7 +117,7 @@ public class Question_001 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
-		int m = scanner.nextInt();
+//		int m = scanner.nextInt();
 		Map<Integer, List<String>> map = new HashMap<>();
 		for (int i = 0; i < n; i++) {
 			List<String> list = new ArrayList<>();

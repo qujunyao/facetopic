@@ -58,5 +58,6 @@ public class Answer_001 {
 			}
 			System.out.println(result);
 		}
+		sc.close();
 	}
 }

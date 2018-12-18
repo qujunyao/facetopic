@@ -2,7 +2,6 @@ package com.company.baidu.questions;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /*
 	 比赛组队（百度2017秋招真题）
@@ -30,6 +29,7 @@ import java.util.Map;
  */
 public class Question_008 {
 
+	@SuppressWarnings("unchecked")
 	public static <E> List<E> arrangeSelect(List<E> data, List<E> target, int k, List<E> result) {
 		List<E> copyData;
 		List<E> copyTarget;
@@ -92,9 +92,9 @@ public class Question_008 {
 	}
 
 	public static void main(String args[]) {
-		char chs[] = { 'a', 'b', 'c', 'd' };
-		List<Character> list = new ArrayList<Character>();
-		List<List<Character>> res = new ArrayList<List<Character>>();
+//		char chs[] = { 'a', 'b', 'c', 'd' };
+//		List<Character> list = new ArrayList<Character>();
+//		List<List<Character>> res = new ArrayList<List<Character>>();
 		// res = combine(chs, 0, 3, list, res);
 		// System.out.println(res);
 		// System.out.println(res.size());

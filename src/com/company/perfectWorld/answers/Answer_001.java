@@ -12,6 +12,7 @@ public class Answer_001 {
 		sovle();
 	}
 
+	@SuppressWarnings("resource")
 	private static void sovle() {
 		Scanner scanner = new Scanner(System.in);
 		String numsL = scanner.nextLine();
@@ -23,7 +24,7 @@ public class Answer_001 {
 		int[] nums = new int[numss.length];
 		int[] vals = new int[numss.length];
 		Map<Integer, Integer> map = new HashMap<>();
-		int sum = 0, subn = 1;
+		int sum = 0;
 		for (int i = 0; i < valss.length; i++) {
 			nums[i] = Integer.parseInt(numss[i].trim());
 			vals[i] = Integer.parseInt(valss[i].trim());
@@ -34,7 +35,7 @@ public class Answer_001 {
 			}
 			sum += nums[i] * vals[i];
 			if ((nums[i] & 1) != 0) {//ÅÐ¶ÏÆæÅ¼
-				subn = 0;//Å¼Êý
+				
 			}
 		}
 		nums = new int[map.size()];
@@ -48,8 +49,6 @@ public class Answer_001 {
 			System.out.println(0);
 			return;
 		}
-		
-		
 		long dp[][] = new long[nums.length + 1][(sum >> 1) + 1];
 		dp[0][0] = 1;
 		for (int i = 1; i < dp.length; i++) {
@@ -71,5 +70,6 @@ public class Answer_001 {
 			System.out.println();
 		}
 		System.out.println(dp[nums.length][sum >> 1]);
+		scanner.close();
 	}
 }
